@@ -1,0 +1,127 @@
+/* Reset default styles */
+body, h1, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #128c7e; /* Update color to match WhatsApp Web */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-item a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-item a:hover {
+    color: #128c7e;
+}
+
+.main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #e1e1e1;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero {
+    background-color: #128c7e; /* Update color to match WhatsApp Web */
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.hero-description {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.feature {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #e1e1e1;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.feature-title {
+    font-size: 24px;
+    color: #128c7e; /* Update color to match WhatsApp Web */
+    margin-bottom: 10px;
+}
+
+.feature-description {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+}
+/* Timer Section */
+.timer-container {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #e1e1e1;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+}
+
+.timer-block {
+    text-align: center;
+    font-size: 28px;
+    color: #075e54;
+    margin: 10px;
+}
+
+.timer-label {
+    font-size: 12px;
+    color: #075e54;
+}
+
+.timer-number {
+    font-size: 36px;
+    color: #075e54;
+}
+
+
+

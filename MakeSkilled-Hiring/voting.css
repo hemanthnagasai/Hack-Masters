@@ -1,0 +1,125 @@
+/* Reset default browser styles */
+body, h1, p, ul, li, div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a background color and font */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Center the voting container */
+.voting-container {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the feature title */
+.feature-title {
+    font-size: 36px;
+    margin: 20px 0;
+    color: #007BFF;
+    text-transform: uppercase;
+}
+
+/* Style idea cards */
+.idea-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 20px 0;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style idea titles */
+.idea-title {
+    font-size: 24px;
+    margin: 0 0 10px;
+    color: #333;
+}
+
+/* Style idea descriptions */
+.idea-description {
+    font-size: 18px;
+    margin: 0 0 20px;
+    color: #666;
+}
+
+/* Style vote buttons */
+.vote-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-transform: uppercase;
+}
+
+.vote-button:hover {
+    background-color: #0056b3;
+}
+
+/* Style vote count */
+.vote-count {
+    display: block;
+    font-size: 16px;
+    color: #999;
+    margin-top: 10px;
+}
+
+/* Comment section */
+.comment-section {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+
+.comment-section h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.comments {
+    list-style-type: none;
+    padding: 0;
+}
+
+.comments li {
+    font-size: 16px;
+    color: #666;
+    margin: 5px 0;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .idea-card {
+        padding: 10px;
+        margin: 10px 0;
+    }
+
+    .idea-title {
+        font-size: 20px;
+    }
+
+    .idea-description {
+        font-size: 16px;
+    }
+
+    .vote-button {
+        padding: 10px 20px;
+    }
+}

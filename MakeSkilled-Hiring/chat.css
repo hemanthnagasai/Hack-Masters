@@ -1,0 +1,148 @@
+/* chat.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.chat-container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.chat-header {
+    background-color: #128C7E; /* WhatsApp green */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.chat-messages {
+    padding: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+    background-color: #e0e0e0; /* WhatsApp chat background */
+}
+
+.chat-messages ul {
+    list-style: none;
+}
+
+.user-message {
+    background-color: #DCF8C6;
+    border-radius: 8px;
+    padding: 8px 12px;
+    margin: 10px 0;
+    max-width: 70%;
+    word-wrap: break-word;
+}
+
+#username {
+    width: 30%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 16px;
+    margin: 8px 8px 8px 0;
+}
+
+#message-input {
+    flex: 1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 16px;
+    margin: 8px 0 8px 8px;
+}
+
+#send-button {
+    background-color: #128C7E; /* WhatsApp green */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 8px;
+}
+
+#send-button:hover {
+    background-color: #075E54; /* WhatsApp green hover */
+}
+
+/* Add styling for the emoji button */
+.emoji-picker button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #128C7E; /* WhatsApp green */
+}
+
+/* Add styling for attachments */
+#attachment-list {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #e0e0e0; /* WhatsApp chat background */
+    border-top: 1px solid #ccc;
+}
+
+.attachment-item {
+    background-color: #DCF8C6;
+    border-radius: 8px;
+    padding: 8px 12px;
+    margin: 10px 5px 0 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.attachment-item:hover {
+    background-color: #BBF1A7;
+}
+
+.attachment-item span {
+    margin-right: 5px;
+}
+
+/* Style the file input to look like a button */
+#file-input {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.custom-file-input {
+    background-color: #128C7E; /* WhatsApp green */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-weight: bold;
+    display: inline-block;
+    margin: 10px 8px 10px 0;
+}
+
+.custom-file-input:hover {
+    background-color: #075E54; /* WhatsApp green hover */
+}
+
+/* Adjust the layout of emojis */
+.emoji-picker {
+    text-align: center;
+    margin: 5px;
+}
+
+.emoji-button {
+    padding: 0;
+    margin: 0 5px;
+}

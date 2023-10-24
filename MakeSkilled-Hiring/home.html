@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon Management System</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav-list">                
+                <li class="nav-item"><a href="home.html">Home</a></li>
+                <li class="nav-item"><a href="team-reg.html">Team Registration</a></li>
+                <li class="nav-item"><a href="mentor-reg.html">Mentor Registration</a></li>
+                <li class="nav-item"><a href="voting.html">Vote for Ideas</a></li>
+                <li class="nav-item"><a href="chat.html">Internal Chat</a></li>
+                <li class="nav-item"><a href="submission.html">Checkpoint Submissions</a></li>
+                <li class="nav-item"><a href="jury.html">Jury Reviews</a></li>
+                <li class="nav-item"><a href="#hackathon-timer">Hackathon Timer</a></li>                
+                <li class="nav-item"><a href="profile.html">Profile</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="hero" id="hero">
+            <h1 class="hero-title">Welcome to the Hack Masters</h1>
+            <p class="hero-description">Your one-stop platform for organizing and participating in hackathons. Streamline your hackathon journey with us.</p>
+        </section>
+
+        <section class="feature" id="team-registration">
+            <h2 class="feature-title">Team Registration</h2>
+            <p class="feature-description">Register your team for the upcoming hackathon. Connect with like-minded individuals and form a powerful team.</p>
+        </section>
+        
+        <section class="feature" id="mentor-registration">
+            <h2 class="feature-title">Mentor Registration</h2>
+            <p class="feature-description">Are you an experienced mentor? Register to guide and support hackathon participants on their projects.</p>
+        </section>
+        
+        <section class="feature" id="vote-for-ideas">
+            <h2 class="feature-title">Vote for Ideas</h2>
+            <p class="feature-description">Explore innovative ideas and cast your vote. Your feedback can shape the future of these projects.</p>
+        </section>
+        
+        <section class="feature" id="internal-chat">
+            <h2 class="feature-title">Internal Chat</h2>
+            <p class="feature-description">Collaborate and communicate with your team members, mentors, and fellow participants through our integrated chat application.</p>
+        </section>
+
+        <section class="feature" id="checkpoint-submissions">
+            <h2 class="feature-title">Checkpoint Submissions</h2>
+            <p class="feature-description">Submit your project checkpoints to track your progress and receive valuable feedback from mentors and peers.</p>
+        </section>
+        
+        <section class="feature" id="jury-reviews">
+            <h2 class="feature-title">Jury Reviews</h2>
+            <p class="feature-description">Our expert jury will evaluate your project and provide detailed reviews. Compete for top prizes.</p>
+        </section>
+        <br>
+        
+        <section id="hackathon-timer" class="content-section flexbox-section">
+            
+            <div class="timer-container">
+                <div class="timer-block">
+                    <span class="timer-number" id="days">00</span>
+                    <span class="timer-label">Days</span>
+                </div>
+                <div class="timer-block">
+                    <span class="timer-number" id="hours">00</span>
+                    <span class="timer-label">Hours</span>
+                </div>
+                <div class="timer-block">
+                    <span class="timer-number" id="minutes">00</span>
+                    <span class="timer-label">Minutes</span>
+                </div>
+                <div class="timer-block">
+                    <span class="timer-number" id="seconds">00</span>
+                    <span class="timer-label">Seconds</span>
+                </div>
+            </div>
+            
+        </section>
+        
+    </main>
+
+    <script src="home.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkpoint Submission</title>
+    <link rel="stylesheet" href="submission.css">
+</head>
+<body>
+    <div class="submission-container">
+        <h1>Checkpoint Submission</h1>
+        <form id="submission-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="project">Project Name:</label>
+            <input type="text" id="project" name="project" required>
+
+            <label for="description">Description of Work:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+
+            <label for="checkpoint">Checkpoint:</label>
+            <select id="checkpoint" name="checkpoint" required>
+                <option value="checkpoint-1">Checkpoint 1</option>
+                <option value="checkpoint-2">Checkpoint 2</option>
+                <option value="checkpoint-3">Checkpoint 3</option>
+            </select>
+
+            <label for="progress">Progress (0-100%):</label>
+            <input type="number" id="progress" name="progress" min="0" max="100" required>
+
+            <label for="file">File Upload:</label>
+            <input type="file" id="file" name="file" accept=".pdf, .doc, .ppt">
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="submission.js"></script>
+</body>
+</html>

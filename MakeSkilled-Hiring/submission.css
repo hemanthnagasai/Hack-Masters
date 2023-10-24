@@ -1,0 +1,93 @@
+body, h1, p, ul, li, input, select, textarea, button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.submission-container {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #075e54; 
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #000000;
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+}
+
+select {
+    appearance: none;
+    background: url('down-arrow.svg') no-repeat right #f9f9f9;
+    padding-right: 40px;
+}
+
+button[type="submit"] {
+    background-color: #128c7e; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #0e6c61; 
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-input {
+    background-color: #128c7e; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.custom-file-input:hover {
+    background-color: #0e6c61; 
+}

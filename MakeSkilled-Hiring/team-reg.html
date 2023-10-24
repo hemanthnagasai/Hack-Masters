@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Member Registration</title>
+  <link rel="stylesheet" href="team-reg.css">
+  
+</head>
+<body>
+    
+  <div class="registration-form">
+    <h2>Team Member Registration</h2>
+    <form id="teamRegistrationForm">
+        <label for="teamName">Team Name:</label>
+      <input type="text" id="teamName" name="teamName" required>
+      <label for="teamSize">Team Size:</label>
+      <input type="number" id="teamSize" name="teamSize" min="1" max="8" required>
+
+      <div id="memberDetails"></div>
+
+      <button type="submit">Register</button>
+    </form>
+  </div>
+
+  <script>
+    const teamSizeInput = document.getElementById('teamSize');
+    const memberDetailsDiv = document.getElementById('memberDetails');
+    let teamSize = 1;
+
+    teamSizeInput.addEventListener('input', function () {
+      teamSize = parseInt(teamSizeInput.value);
+
+      if (teamSize > 8) {
+        teamSizeInput.value = 8;
+        teamSize = 8;
+      }
+
+      memberDetailsDiv.innerHTML = '';
+
+      for (let i = 1; i <= teamSize; i++) {
+        const memberLabel = document.createElement('label');
+        memberLabel.textContent = `Member ${i} Name:`;
+
+        const memberInput = document.createElement('input');
+        memberInput.type = 'text';
+        memberInput.name = `memberName${i}`;
+        memberInput.required = true;
+
+        if (i === 1) {
+          memberInput.placeholder = 'Team Leader Name';
+        }
+
+        memberDetailsDiv.appendChild(memberLabel);
+        memberDetailsDiv.appendChild(memberInput);
+      }
+    });
+  </script>
+</body>
+</html>

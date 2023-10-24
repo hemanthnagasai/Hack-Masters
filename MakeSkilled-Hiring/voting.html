@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting for Ideas</title>
+    <link rel="stylesheet" href="voting.css">
+</head>
+<body>
+    <div class="voting-container">
+        <h1 class="feature-title">Vote for Your Favorite Idea</h1>
+
+        <label for="sortIdeas">Sort by:</label>
+        <select id="sortIdeas">
+            <option value="votes">Most Voted</option>
+            <option value="newest">Newest</option>
+            <option value="oldest">Oldest</option>
+        </select>
+
+        <input type="text" id="ideaSearch" placeholder="Search for ideas">
+
+        <div class="idea-card">
+            <h2 class="idea-title">Idea 1</h2>
+            <p class="idea-description">Description of Idea 1</p>
+            <p class="team-name">Team Name: Team A</p><br>
+            <button class="vote-button" data-idea="1">Vote</button>
+            <span class="vote-count">0 votes</span>
+            <div class="comment-section">
+                <h3>Comments</h3>
+                <ul class="comments">
+                    <li>Comment 1</li>
+                    <li>Comment 2</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="idea-card">
+            <h2 class="idea-title">Idea 2</h2>
+            <p class ="idea-description">Description of Idea 2</p>
+            <p class="team-name">Team Name: Team B</p><br>
+            <button class="vote-button" data-idea="2">Vote</button>
+            <span class="vote-count">0 votes</span>
+            <div class="comment-section">
+                <h3>Comments</h3>
+                <ul class="comments">
+                    <li>Comment 1</li>
+                    <li>Comment 2</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="idea-card">
+            <h2 class="idea-title">Idea 3</h2>
+            <p class="idea-description">Description of Idea 3</p>
+            <p class="team-name">Team Name: Team C</p><br>
+            <button class="vote-button" data-idea="3">Vote</button>
+            <span class="vote-count">0 votes</span>
+            <div class="comment-section">
+                <h3>Comments</h3>
+                <ul class="comments">
+                    <li>Comment 1</li>
+                    <li>Comment 2</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="idea-card">
+            <h2 class="idea-title">Idea 4</h2>
+            <p class="idea-description">Description of Idea 4</p>
+            <p class="team-name">Team Name: Team D</p><br>
+            <button class="vote-button" data-idea="4">Vote</button>
+            <span class="vote-count">0 votes</span>
+            <div class="comment-section">
+                <h3>Comments</h3>
+                <ul class="comments">
+                    <li>Comment 1</li>
+                    <li>Comment 2</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="idea-card">
+            <h2 class="idea-title">Idea 5</h2>
+            <p class="idea-description">Description of Idea 5</p>
+            <p class="team-name">Team Name: Team E</p><br>
+            <button class="vote-button" data-idea="5">Vote</button>
+            <span class="vote-count">0 votes</span>
+            <div class="comment-section">
+                <h3>Comments</h3>
+                <ul class="comments">
+                    <li>Comment 1</li>
+                    <li>Comment 2</li>
+                </ul>
+            </div>
+        </div>
+        
+
+        <a href="https://twitter.com/share?url=URL_OF_YOUR_IDEA&text=Check out this awesome idea!" target="_blank">
+            <button class="share-button">Share on Twitter</button>
+        </a>
+
+        <a href="https://www.linkedin.com/shareArticle?url=URL_OF_YOUR_IDEA&title=Idea Title" target="_blank">
+            <button class="share-button">Share on LinkedIn</button>
+        </a>
+
+        <a href="https://www.instagram.com/share?url=URL_OF_YOUR_IDEA&title=Idea Title" target="_blank">
+            <button class="share-button">Share on Instagram</button>
+        </a>
+
+        <a href="whatsapp://send?text=Check out this awesome idea: URL_OF_YOUR_IDEA" target="_blank">
+            <button class="share-button">Share on WhatsApp</button>
+        </a>
+        
+    </div>
+
+    <script src="voting.js"></script>   
+    <script src="voting-count.js"></script>
+
+
+</body>
+</html>
